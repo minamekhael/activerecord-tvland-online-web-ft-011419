@@ -1,6 +1,7 @@
 class CreateCharacters < ActiveRecord::Migration[4.2]
   def change
     belongs_to :actors
+    belongs_to :shows
     create_table :characters do |c|
       c.string :name
       c.string :catchphrase
